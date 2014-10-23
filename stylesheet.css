@@ -6,10 +6,11 @@ Header
 
 #logonav {
 
-	max-width: 280px;
+	max-width: 250px;
 	height: auto;
-	margin-top: 12px;
-	margin-left: 40px;
+	margin-left: 45px;
+	padding-top: 10px;
+
 }
 
 
@@ -19,9 +20,10 @@ Header
      -webkit-flex-direction: row;
      -webkit-justify-content: space-between;
      -webkit-flex-wrap: wrap;
-	min-height: 70px;
-	max-height: 600px;
-	max-width: 90%;
+     -webkit-align-items: center;
+     min-height: 70px;
+     max-height: 600px;
+	 max-width: 100%;
 }
 
 #headernav li:first-child {
@@ -30,8 +32,7 @@ Header
 
 .headernavli {
 	font-size: 1.5em;
-	margin-top: 55px;
-	padding: 0 25px 0 25px;
+	padding: 0 40px 0 25px;
 }
 
 a {
@@ -46,7 +47,10 @@ li {
 list-style-type: none;
 }
 
+/******************
 
+Main
+********************/
 
 main {
 	display: block;
@@ -55,31 +59,147 @@ main {
 	width: 100%;
 }
 
+.topcontentcontainer {
+	height: 100vh;
+	margin: 0 auto;
+	max-width: 85%;
+}
 
-main {
+h1 {
+	text-align: center;
+	font-family: Garamond, Georgia, serif;
+	font-weight: 600;
+	font-size: 1.5em;
+	letter-spacing: .1em;
+}
+
+p {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	max-width: 80%;
+	margin: 0 auto;
+	letter-spacing: .09em;
+
+}
+
+/******************
+
+Footer
+********************/
+
+footer {
+	margin-top: 20px;
+}
+
+#footernav {
+	display: flex;
+     -webkit-flex-direction: column;
+     -webkit-justify-content: center;
+     -webkit-flex-wrap: wrap;
+     align-items: flex-start;;
+     margin: 20px 0 10px 10%;
+     }
+
+ #footernav a {
+ 	font-size: .8em;
+ }
+
+.socialicons {
+	display: flex;
+     -webkit-flex-direction: row;
+     -webkit-justify-content: flex-end;
+     -webkit-flex-wrap: wrap;
+     align-items: flex-start;
+     margin-right: 10%;
+
+     }
+
+.footericon {
+	max-width: 25px;
+	height: auto;
+	padding: 0 3px 0 5px;
+}
+
+#copywrite {
+	text-align: center;
+	margin-bottom: 8px;
+	font-size: .8em;
+}
+
+/****************************
+Index
+****************************/
+
+
+
+#mainlanding {
 	background: url(images/piano.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
 	}
 
-#footernav {
-	display: -webkit-flex;
-     -webkit-flex-direction: row;
-     -webkit-justify-content: space-around;
-     -webkit-flex-wrap: wrap;
-     margin-top: 20px;
-     }
+/****************************
+About
+****************************/
+/****************************
+Repertoire
+****************************/
+/****************************
+Tablet
+****************************/
 
-.socialicons {
-	display: -webkit-flex;
-     -webkit-flex-direction: row;
-     -webkit-justify-content: space-around;
-     -webkit-flex-wrap: wrap;
-     }
+@media only screen and (max-width:800px) {
+	#logonav {
+		margin-left: 33%;
+		margin-bottom: -20px;
 
-.footericon {
-	max-width: 35px;
-	height: auto;
+
 }
+
+/****************************
+Cell
+****************************/
+
+@media only screen and (max-width:425px) {
+	#headernav {
+				display: -webkit-flex;
+			     -webkit-flex-direction: column;
+			     -webkit-justify-content: space-between;
+			     -webkit-flex-wrap: wrap;
+			     margin-top: -15px;
+			     margin-bottom: 10px;
+			}
+
+	.headernavli {
+				
+				padding: 0 25px 5px 25px;
+
+			}
+
+	#logonav {
+		margin-left: 20vw;
+		margin-bottom: -20px;
+
+	}
+
+
+
+	#footernav li {
+	margin-left: 35%;
+     }
+	
+	.socialicons {
+		-webkit-justify-content: center;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+
+}
+
+
+
+
