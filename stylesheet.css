@@ -4,12 +4,15 @@
 Header
 ********************/
 
+header {
+	border-bottom: solid 1px;
+}
 #logonav {
 
 	max-width: 250px;
 	height: auto;
-	margin-left: 45px;
-	padding-top: 10px;
+	margin-left: 80px;
+	padding-top: 5px;
 
 }
 
@@ -32,7 +35,7 @@ Header
 
 .headernavli {
 	font-size: 1.5em;
-	padding: 0 40px 0 25px;
+	padding: 0 90px 0 25px;
 }
 
 a {
@@ -60,9 +63,10 @@ main {
 }
 
 .topcontentcontainer {
-	height: 100vh;
+	height: 75vh;
 	margin: 0 auto;
-	max-width: 85%;
+	max-width: 100%;
+	
 }
 
 h1 {
@@ -89,7 +93,7 @@ Footer
 ********************/
 
 footer {
-	margin-top: 20px;
+	border-top: solid 1px;
 }
 
 #footernav {
@@ -127,6 +131,10 @@ footer {
 	font-size: .8em;
 }
 
+#footercontainer {
+	display: block;
+	clear: both;
+}
 /****************************
 Index
 ****************************/
@@ -148,6 +156,50 @@ About
 /****************************
 Repertoire
 ****************************/
+	#reptop {
+		background: url(images/bass.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding: 20px 0 50px 0;
+		height: 50vh;
+	}
+
+	#reptop p, #reptop h1 {
+		color: white;
+		font-family: 'Josefin Sans';
+	}
+
+	 #reptop h1 {
+	 	padding-top: 50px;
+	 }
+
+
+	#songcontainer {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-webkit-column-gap: 2em;
+		-moz-column-gap: 2em;
+		-webkit-column-width: 200px;
+		-moz-column-width: 200px;
+		font-family: 'Josefin Sans', sans-serif;
+		margin: 30px auto 0px auto;
+		width: 80%;
+	}
+
+	#songcontainer li {
+		line-height: 1.3em;
+	}
+
+	#songcontainer h2 {
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		text-align: center;
+	}
+	#pushfooter {
+		min-height: 400px;
+	}
 /****************************
 Tablet
 ****************************/
@@ -170,18 +222,18 @@ Cell
 			     -webkit-flex-direction: column;
 			     -webkit-justify-content: space-between;
 			     -webkit-flex-wrap: wrap;
-			     margin-top: -15px;
+			     margin-top: -10px;
 			     margin-bottom: 10px;
 			}
 
 	.headernavli {
 				
-				padding: 0 25px 5px 25px;
+				padding: 10px 25px 5px 25px;
 
 			}
 
 	#logonav {
-		margin-left: 20vw;
+		margin-left: 19vw;
 		margin-bottom: -20px;
 
 	}
